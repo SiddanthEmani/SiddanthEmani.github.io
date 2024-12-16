@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Siddanth Emani Blog</title>
+    <link>https://github.com/SiddanthEmani/SiddanthEmani.github.io/</link>
+    <description>Recent content on Siddanth Emani Blog</description>
+    <generator>Hugo -- 0.139.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Dec 2024 16:14:18 -0500</lastBuildDate>
+    <atom:link href="https://github.com/SiddanthEmani/SiddanthEmani.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is ResNet?</title>
+      <link>https://github.com/SiddanthEmani/SiddanthEmani.github.io/posts/testpost/</link>
+      <pubDate>Mon, 16 Dec 2024 16:14:18 -0500</pubDate>
+      <guid>https://github.com/SiddanthEmani/SiddanthEmani.github.io/posts/testpost/</guid>
+      <description>&lt;h3 id=&#34;resnet-block&#34;&gt;ResNet Block&lt;/h3&gt;
+&lt;p&gt;![[ResNet Architecture.png]]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;3x3 Convolution (stride=2)&lt;/strong&gt; - Downsamples the image into half the height and width. Also, doubles the number of channels (number of filters are doubled).
+&lt;ul&gt;
+&lt;li&gt;Sliding a 3x3 kernel/matrix onto the image and dot product is calculated with overlapped images. 3x3 is small enough to capture fine details and more efficient. Can be stacked to capture complex patterns.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Batch Norm&lt;/strong&gt; -&lt;/li&gt;
+&lt;li&gt;[[Activation Functions#Rectified Linear Unit (ReLU)|ReLU]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;thought-process&#34;&gt;Thought Process&lt;/h3&gt;
+&lt;p&gt;Our goal is to &lt;strong&gt;increase the resolution&lt;/strong&gt; of the image.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
