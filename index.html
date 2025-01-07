@@ -9,51 +9,24 @@
 <title>Siddanth Emani Blog</title>
 
 <meta name="description" content="">
-<meta name="author" content="">
+<meta name="author" content="Siddanth Emani">
 <link rel="canonical" href="https://SiddanthEmani.github.io/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://SiddanthEmani.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://SiddanthEmani.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://SiddanthEmani.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://SiddanthEmani.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://SiddanthEmani.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="https://SiddanthEmani.github.io/assets/Logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://SiddanthEmani.github.io/assets/Logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://SiddanthEmani.github.io/assets/Logo.png">
+<link rel="apple-touch-icon" href="https://SiddanthEmani.github.io/assets/Logo.png">
+<link rel="mask-icon" href="https://SiddanthEmani.github.io/assets/Logo.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://SiddanthEmani.github.io/index.xml">
+<link rel="alternate" type="application/json" href="https://SiddanthEmani.github.io/index.json">
 <link rel="alternate" hreflang="en" href="https://SiddanthEmani.github.io/">
 <noscript>
     <style>
         #theme-toggle,
         .top-link {
             display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
         }
 
     </style>
@@ -73,22 +46,18 @@
   "name": "Siddanth Emani Blog",
   "url": "https://SiddanthEmani.github.io/",
   "description": "",
-  "logo": "https://SiddanthEmani.github.io/favicon.ico",
+  "logo": "https://SiddanthEmani.github.io/assets/Logo.png",
   "sameAs": [
-      
+      "https://github.com/SiddanthEmani", "https://www.linkedin.com/in/siddanth-emani"
   ]
 }
 </script>
 </head>
 
-<body class="list" id="top">
+<body class="list dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
+    if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -121,25 +90,60 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://SiddanthEmani.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://SiddanthEmani.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://SiddanthEmani.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h1>Welcome to my tech blog! 👋</h1>
+        <h1>Siddanth Emani Blog!</h1>
     </header>
     <div class="entry-content">
-        I&rsquo;m Ramana Siddanth Emani, a Data Scientist and Business Analyst with over 4 years of experience in NLP, deep learning, big data analytics, and predictive modeling. My journey spans impactful projects like developing recommendation systems, automating customer support, and transforming business processes with advanced AI. This blog is my platform to share insights, techniques, and innovations in the world of data science and AI, blending practical applications with cutting-edge research. Whether you&rsquo;re a fellow enthusiast or a curious learner, I hope to inspire and empower you with the power of data. Stay tuned!
+        👋 Welcome to my tech blog!
     </div>
     <footer class="entry-footer">
         <div class="social-icons" >
+    <a href="https://github.com/SiddanthEmani" target="_blank" rel="noopener noreferrer me"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://www.linkedin.com/in/siddanth-emani" target="_blank" rel="noopener noreferrer me"
+        title="Linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+    </a>
 </div>
 
     </footer>
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://SiddanthEmani.github.io/assets/ResNet%20Architecture.png" alt="">
+</figure>
   <header class="entry-header">
     <h2 class="entry-hint-parent">What is ResNet?
     </h2>
@@ -148,7 +152,7 @@
     <p>ResNet Block 3x3 Convolution (stride=2) - Downsamples the image into half the height and width. Also, doubles the number of channels (number of filters are doubled). Sliding a 3x3 kernel/matrix onto the image and dot product is calculated with overlapped images. 3x3 is small enough to capture fine details and more efficient. Can be stacked to capture complex patterns. Batch Norm ReLU Thought Process Our goal is to increase the resolution of the image.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-16 16:14:18 -0500 EST'>December 16, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-12-16 16:14:18 -0500 EST'>December 16, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Siddanth Emani</footer>
   <a class="entry-link" aria-label="post link to What is ResNet?" href="https://SiddanthEmani.github.io/posts/testpost/"></a>
 </article>
     </main>

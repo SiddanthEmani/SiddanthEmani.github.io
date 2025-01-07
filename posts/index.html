@@ -8,14 +8,14 @@
 <title>Posts | Siddanth Emani Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - Siddanth Emani Blog">
-<meta name="author" content="">
+<meta name="author" content="Siddanth Emani">
 <link rel="canonical" href="https://SiddanthEmani.github.io/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://SiddanthEmani.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://SiddanthEmani.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://SiddanthEmani.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://SiddanthEmani.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://SiddanthEmani.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="https://SiddanthEmani.github.io/assets/Logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://SiddanthEmani.github.io/assets/Logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://SiddanthEmani.github.io/assets/Logo.png">
+<link rel="apple-touch-icon" href="https://SiddanthEmani.github.io/assets/Logo.png">
+<link rel="mask-icon" href="https://SiddanthEmani.github.io/assets/Logo.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://SiddanthEmani.github.io/posts/index.xml">
@@ -25,34 +25,6 @@
         #theme-toggle,
         .top-link {
             display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
         }
 
     </style>
@@ -82,14 +54,10 @@
 </script>
 </head>
 
-<body class="list" id="top">
+<body class="list dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
+    if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -122,17 +90,34 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://SiddanthEmani.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://SiddanthEmani.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://SiddanthEmani.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header">
+<header class="page-header"><div class="breadcrumbs"><a href="https://SiddanthEmani.github.io/">Home</a></div>
   <h1>
     Posts
   </h1>
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://SiddanthEmani.github.io/assets/ResNet%20Architecture.png" alt="">
+</figure>
   <header class="entry-header">
     <h2 class="entry-hint-parent">What is ResNet?
     </h2>
@@ -141,7 +126,7 @@
     <p>ResNet Block 3x3 Convolution (stride=2) - Downsamples the image into half the height and width. Also, doubles the number of channels (number of filters are doubled). Sliding a 3x3 kernel/matrix onto the image and dot product is calculated with overlapped images. 3x3 is small enough to capture fine details and more efficient. Can be stacked to capture complex patterns. Batch Norm ReLU Thought Process Our goal is to increase the resolution of the image.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-16 16:14:18 -0500 EST'>December 16, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-12-16 16:14:18 -0500 EST'>December 16, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Siddanth Emani</footer>
   <a class="entry-link" aria-label="post link to What is ResNet?" href="https://SiddanthEmani.github.io/posts/testpost/"></a>
 </article>
     </main>
