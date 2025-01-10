@@ -36,10 +36,10 @@
 #  pageRef = "tags/interesting-topic"
 #  weight = 10
 
-[[subnavigation]]
+[[main]]
  name = "GitHub"
  pre = "github"
- pageRef = "categories/awesome"
+#  pageRef = "categories/awesome"
  weight = 20
 
 #[[main]]
