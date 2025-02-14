@@ -50,7 +50,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showMoreLinkDest = "/posts/"
   cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+  layoutBackgroundBlur = true # only used when layout equals background
 
 [article]
   showDate = true
@@ -61,9 +61,9 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showAuthor = true
   showAuthorBottom = true
   showHero = true
-  heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
@@ -84,11 +84,11 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showZenMode = true
 
 [list]
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showSummary = false
   showViews = false
   showLikes = false
@@ -96,7 +96,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showCards = false
   orderByWeight = false
   groupByYear = true
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
   constrainItemsWidth = false
 
@@ -105,23 +105,23 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [taxonomy]
   showTermCount = true
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  showBreadcrumbs = false
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = true
   showViews = false
   showLikes = false
   showTableOfContents = false
-  cardView = false
+  cardView = true
 
 [term]
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  showBreadcrumbs = false
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = true
   showViews = false
   showLikes = false
   showTableOfContents = true
   groupByYear = false
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
 
 [firebase]

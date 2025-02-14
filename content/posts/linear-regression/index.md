@@ -2,7 +2,7 @@
 date = 2025-01-30
 title = 'Linear Regression'
 weight = 10
-tags = ["Machine Learning", "Regression", "Linear Models"]
+tags = ["Machine Learning", "Regression", "Linear Models", "Supervised Learning"]
 +++
 {{< katex >}}
 

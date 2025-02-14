@@ -9,12 +9,22 @@
     <managingEditor>siddanth2486@gmail.com (Siddanth Emani)</managingEditor>
     <webMaster>siddanth2486@gmail.com (Siddanth Emani)</webMaster>
     <copyright>© 2025 Siddanth Emani</copyright>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://SiddanthEmani.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://SiddanthEmani.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Classification</title>
+      <link>https://SiddanthEmani.github.io/tags/classification/</link>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+      <author>siddanth2486@gmail.com (Siddanth Emani)</author>
+      <guid>https://SiddanthEmani.github.io/tags/classification/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Linear Models</title>
       <link>https://SiddanthEmani.github.io/tags/linear-models/</link>
-      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
       <author>siddanth2486@gmail.com (Siddanth Emani)</author>
       <guid>https://SiddanthEmani.github.io/tags/linear-models/</guid>
       <description></description>
@@ -24,9 +34,19 @@
     <item>
       <title>Machine Learning</title>
       <link>https://SiddanthEmani.github.io/tags/machine-learning/</link>
-      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
       <author>siddanth2486@gmail.com (Siddanth Emani)</author>
       <guid>https://SiddanthEmani.github.io/tags/machine-learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Supervised Learning</title>
+      <link>https://SiddanthEmani.github.io/tags/supervised-learning/</link>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+      <author>siddanth2486@gmail.com (Siddanth Emani)</author>
+      <guid>https://SiddanthEmani.github.io/tags/supervised-learning/</guid>
       <description></description>
       
     </item>

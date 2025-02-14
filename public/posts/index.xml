@@ -9,7 +9,17 @@
     <managingEditor>siddanth2486@gmail.com (Siddanth Emani)</managingEditor>
     <webMaster>siddanth2486@gmail.com (Siddanth Emani)</webMaster>
     <copyright>© 2025 Siddanth Emani</copyright>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://SiddanthEmani.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://SiddanthEmani.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://SiddanthEmani.github.io/posts/logistic-regression/</link>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+      <author>siddanth2486@gmail.com (Siddanth Emani)</author>
+      <guid>https://SiddanthEmani.github.io/posts/logistic-regression/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://SiddanthEmani.github.io/posts/logistic-regression/feature*.jpg" />
+    </item>
     
     <item>
       <title>Linear Regression</title>
@@ -18,7 +28,7 @@
       <author>siddanth2486@gmail.com (Siddanth Emani)</author>
       <guid>https://SiddanthEmani.github.io/posts/linear-regression/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://SiddanthEmani.github.io/posts/linear-regression/feature*.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://SiddanthEmani.github.io/posts/linear-regression/feature*.jpg" />
     </item>
     
     <item>
@@ -28,7 +38,7 @@
       <author>siddanth2486@gmail.com (Siddanth Emani)</author>
       <guid>https://SiddanthEmani.github.io/posts/resnet/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://SiddanthEmani.github.io/posts/resnet/feature*.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://SiddanthEmani.github.io/posts/resnet/feature*.jpg" />
     </item>
     
   </channel>

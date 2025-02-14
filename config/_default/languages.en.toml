@@ -17,7 +17,7 @@ title = "Siddanth Emani Blog"
 [params.author]
   name = "Siddanth Emani"
   email = "siddanth2486@gmail.com"
-  image = "img/blowfish_logo.png"
+  image = "img/siddanth-emani.jpg"
   imageQuality = 96
   headline = "I'm only human :)"
   bio = "Data Scientist with 4+ years experience"
