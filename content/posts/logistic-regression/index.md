@@ -6,7 +6,110 @@ tags = ["Machine Learning", "Classification", "Linear Models", "Supervised Learn
 +++
 {{< katex >}}
 
-<img src="img/Logistic%20Regression.png" alt="Logistic Regression" width="400" style="display: block; margin: 0 auto;">
+{{< chart >}}
+type: 'scatter',
+data: (function(){
+  let class0 = [];
+  let class1 = [];
+  let logisticCurve = [];
+  const numPoints = 100;
+  
+  // Simulate binary classification data:
+  // Predictor x is uniformly drawn from 0 to 6.
+  // Logistic function: p = 1 / (1 + exp(-(x - 3)))
+  for (let i = 0; i < numPoints; i++) {
+    let x = Math.random() * 6;
+    let p = 1/(1 + Math.exp(-(x - 3)));
+    // Assign class label based on probability p:
+    let outcome = Math.random() < p ? 1 : 0;
+    if (outcome === 1) {
+      class1.push({ x: x, y: outcome });
+    } else {
+      class0.push({ x: x, y: outcome });
+    }
+  }
+  
+  // Generate logistic regression curve data:
+  // Create 50 points evenly spaced over x in [0,6].
+  const numCurvePoints = 50;
+  for (let i = 0; i < numCurvePoints; i++) {
+    let x = (6 / (numCurvePoints - 1)) * i;
+    let p = 1/(1 + Math.exp(-(x - 3)));
+    logisticCurve.push({ x: x, y: p });
+  }
+  
+  return {
+    datasets: [
+      {
+        label: 'Class 0',
+        data: class0,
+        backgroundColor: 'rgba(54, 162, 235, 1)', // Blue for Class 0
+        pointRadius: 4
+      },
+      {
+        label: 'Class 1',
+        data: class1,
+        backgroundColor: 'rgba(255, 99, 132, 1)', // Red for Class 1
+        pointRadius: 4
+      },
+      {
+        label: 'Logistic Regression Curve',
+        type: 'line',
+        data: logisticCurve,
+        borderColor: 'rgba(255, 206, 86, 1)', // Yellowish line
+        fill: false,
+        pointRadius: 0,
+        tension: 0,
+        borderDash: [5, 5]
+      }
+    ]
+  };
+})(),
+options: {
+  plugins: {
+    legend: {
+      labels: {
+        color: 'white'
+      }
+    }
+  },
+  scales: {
+    x: {
+      type: 'linear',
+      position: 'bottom',
+      title: {
+        display: true,
+        text: 'Predictor (x)',
+        color: 'white'
+      },
+      ticks: {
+        color: 'white'
+      },
+      grid: {
+        color: 'rgba(255, 255, 255, 0.1)'
+      },
+      min: 0,
+      max: 6
+    },
+    y: {
+      type: 'linear',
+      title: {
+        display: true,
+        text: 'Probability / Class Label',
+        color: 'white'
+      },
+      ticks: {
+        color: 'white'
+      },
+      grid: {
+        color: 'rgba(255, 255, 255, 0.1)'
+      },
+      min: -0.1,
+      max: 1.1
+    }
+  }
+}
+{{< /chart >}}
 
 A classification technique which computes the probability or likelihood that the data belongs to a class of interest.
 $$\log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 x_1 + \cdots + \beta_n x_n$$

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ResNet on Siddanth Emani Blog</title>
-    <link>https://SiddanthEmani.github.io/tags/resnet/</link>
+    <link>http://localhost:1313/tags/resnet/</link>
     <description>Recent content in ResNet on Siddanth Emani Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>siddanth2486@gmail.com (Siddanth Emani)</managingEditor>
     <webMaster>siddanth2486@gmail.com (Siddanth Emani)</webMaster>
     <copyright>© 2025 Siddanth Emani</copyright>
-    <lastBuildDate>Thu, 09 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://SiddanthEmani.github.io/tags/resnet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/resnet/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What is ResNet?</title>
-      <link>https://SiddanthEmani.github.io/posts/resnet/</link>
+      <link>http://localhost:1313/posts/resnet/</link>
       <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
       <author>siddanth2486@gmail.com (Siddanth Emani)</author>
-      <guid>https://SiddanthEmani.github.io/posts/resnet/</guid>
+      <guid>http://localhost:1313/posts/resnet/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://SiddanthEmani.github.io/posts/resnet/feature*.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/resnet/feature*.jpg" />
     </item>
     
   </channel>

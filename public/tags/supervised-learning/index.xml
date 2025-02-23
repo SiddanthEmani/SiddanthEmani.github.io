@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Supervised Learning on Siddanth Emani Blog</title>
-    <link>https://SiddanthEmani.github.io/tags/supervised-learning/</link>
+    <link>http://localhost:1313/tags/supervised-learning/</link>
     <description>Recent content in Supervised Learning on Siddanth Emani Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>siddanth2486@gmail.com (Siddanth Emani)</managingEditor>
     <webMaster>siddanth2486@gmail.com (Siddanth Emani)</webMaster>
     <copyright>© 2025 Siddanth Emani</copyright>
-    <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://SiddanthEmani.github.io/tags/supervised-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/supervised-learning/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Logistic Regression</title>
-      <link>https://SiddanthEmani.github.io/posts/logistic-regression/</link>
+      <link>http://localhost:1313/posts/logistic-regression/</link>
       <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
       <author>siddanth2486@gmail.com (Siddanth Emani)</author>
-      <guid>https://SiddanthEmani.github.io/posts/logistic-regression/</guid>
+      <guid>http://localhost:1313/posts/logistic-regression/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://SiddanthEmani.github.io/posts/logistic-regression/feature*.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/logistic-regression/feature*.jpg" />
     </item>
     
     <item>
       <title>Linear Regression</title>
-      <link>https://SiddanthEmani.github.io/posts/linear-regression/</link>
+      <link>http://localhost:1313/posts/linear-regression/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
       <author>siddanth2486@gmail.com (Siddanth Emani)</author>
-      <guid>https://SiddanthEmani.github.io/posts/linear-regression/</guid>
+      <guid>http://localhost:1313/posts/linear-regression/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://SiddanthEmani.github.io/posts/linear-regression/feature*.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/linear-regression/feature*.jpg" />
     </item>
     
   </channel>

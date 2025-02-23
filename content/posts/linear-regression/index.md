@@ -6,6 +6,135 @@ tags = ["Machine Learning", "Regression", "Linear Models", "Supervised Learning"
 +++
 {{< katex >}}
 
+{{< chart >}}
+type: 'scatter',
+data: (function(){
+  // Generate 10 house data points.
+  let houseData = [];
+  let residualDatasets = [];
+  const numPoints = 10;
+  const startSize = 800;   // Minimum house size in sqft
+  const endSize = 4000;    // Maximum house size in sqft
+  const step = (endSize - startSize) / (numPoints - 1);
+  
+  // Create data points using a base model with increased noise.
+  // Base model: Price = 50 + 0.1 * House Size (in thousands USD)
+  // Noise is now uniformly drawn from [-105, 105] to target ~70% accuracy.
+  for (let i = 0; i < numPoints; i++) {
+    let size = Math.round(startSize + i * step);
+    let noise = (Math.random() - 0.5) * 210; // noise in [-105, 105]
+    let price = Math.round(50 + 0.1 * size + noise);
+    houseData.push({ x: size, y: price });
+  }
+  
+  // Compute least squares regression line from the generated data.
+  let sumX = 0, sumY = 0;
+  for (let i = 0; i < houseData.length; i++) {
+    sumX += houseData[i].x;
+    sumY += houseData[i].y;
+  }
+  let meanX = sumX / houseData.length;
+  let meanY = sumY / houseData.length;
+  let num = 0, den = 0;
+  for (let i = 0; i < houseData.length; i++) {
+    num += (houseData[i].x - meanX) * (houseData[i].y - meanY);
+    den += Math.pow(houseData[i].x - meanX, 2);
+  }
+  let slope = num / den;
+  let intercept = meanY - slope * meanX;
+  
+  // Create residual lines for each data point using the computed regression line.
+  for (let i = 0; i < houseData.length; i++) {
+    let size = houseData[i].x;
+    let predicted = intercept + slope * size;
+    residualDatasets.push({
+      label: '', // Empty label to filter out from the legend.
+      type: 'line',
+      data: [
+        { x: size, y: houseData[i].y },
+        { x: size, y: predicted }
+      ],
+      borderColor: 'rgba(255, 215, 0, 1)', // Golden color for residual lines.
+      borderDash: [5, 5],
+      fill: false,
+      pointRadius: 0,
+      tension: 0
+    });
+  }
+  
+  // Regression line spanning the range of house sizes.
+  const regressionLine = {
+    label: 'Regression Line',
+    type: 'line',
+    data: [
+      { x: startSize, y: intercept + slope * startSize },
+      { x: endSize, y: intercept + slope * endSize }
+    ],
+    borderColor: 'rgba(255, 99, 132, 1)',
+    fill: false,
+    pointRadius: 0,
+    tension: 0
+  };
+  
+  // Combine datasets: house data, regression line, and residual lines.
+  return {
+    datasets: [
+      {
+        label: 'House Data',
+        data: houseData,
+        backgroundColor: 'rgba(75, 192, 192, 1)',
+        pointRadius: 4,
+        showLine: false
+      },
+      regressionLine
+    ].concat(residualDatasets)
+  };
+})(),
+options: {
+  plugins: {
+    legend: {
+      labels: {
+        // Filter out any dataset with an empty label (i.e. the residual lines)
+        filter: function(legendItem, data) {
+          return legendItem.text !== '';
+        },
+        color: 'white'
+      }
+    }
+  },
+  scales: {
+    x: {
+      type: 'linear',
+      position: 'bottom',
+      title: {
+        display: true,
+        text: 'House Size (sqft)',
+        color: 'white'
+      },
+      ticks: {
+        color: 'white'
+      },
+      grid: {
+        color: 'rgba(255, 255, 255, 0.1)'
+      }
+    },
+    y: {
+      title: {
+        display: true,
+        text: 'House Price (thousands USD)',
+        color: 'white'
+      },
+      ticks: {
+        color: 'white'
+      },
+      grid: {
+        color: 'rgba(255, 255, 255, 0.1)'
+      }
+    }
+  }
+}
+{{< /chart >}}
+
 ## Definition
 
 A model that fits a linear equation to the data.
