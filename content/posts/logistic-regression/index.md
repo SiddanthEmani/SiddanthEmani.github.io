@@ -1,11 +1,11 @@
 +++
 date = 2025-02-14
 title = 'Logistic Regression'
-weight = 10
 tags = ["Machine Learning", "Classification", "Linear Models", "Supervised Learning"]
 +++
 {{< katex >}}
 
+<br>
 {{< chart >}}
 type: 'scatter',
 data: (function(){
@@ -53,7 +53,7 @@ data: (function(){
         pointRadius: 4
       },
       {
-        label: 'Logistic Regression Curve',
+        label: 'Regression Curve',
         type: 'line',
         data: logisticCurve,
         borderColor: 'rgba(255, 206, 86, 1)', // Yellowish line
@@ -104,8 +104,8 @@ options: {
       grid: {
         color: 'rgba(255, 255, 255, 0.1)'
       },
-      min: -0.1,
-      max: 1.1
+      min: -0.3,
+      max: 1.3
     }
   }
 }

@@ -1,11 +1,11 @@
 +++
 date = 2025-01-30
 title = 'Linear Regression'
-weight = 10
 tags = ["Machine Learning", "Regression", "Linear Models", "Supervised Learning"]
 +++
 {{< katex >}}
 
+<br>
 {{< chart >}}
 type: 'scatter',
 data: (function(){
@@ -121,7 +121,7 @@ options: {
     y: {
       title: {
         display: true,
-        text: 'House Price (thousands USD)',
+        text: 'House Price (USD)',
         color: 'white'
       },
       ticks: {

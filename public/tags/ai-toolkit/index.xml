@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Toolkit on Siddanth Emani Blog</title>
+    <link>http://localhost:1313/tags/ai-toolkit/</link>
+    <description>Recent content in AI Toolkit on Siddanth Emani Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>siddanth2486@gmail.com (Siddanth Emani)</managingEditor>
+    <webMaster>siddanth2486@gmail.com (Siddanth Emani)</webMaster>
+    <copyright>© 2025 Siddanth Emani</copyright>
+    <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ai-toolkit/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ReLU Activation Function</title>
+      <link>http://localhost:1313/ai-toolkit/activation-functions/relu/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      <author>siddanth2486@gmail.com (Siddanth Emani)</author>
+      <guid>http://localhost:1313/ai-toolkit/activation-functions/relu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sigmoid Activation Function</title>
+      <link>http://localhost:1313/ai-toolkit/activation-functions/sigmoid/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      <author>siddanth2486@gmail.com (Siddanth Emani)</author>
+      <guid>http://localhost:1313/ai-toolkit/activation-functions/sigmoid/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

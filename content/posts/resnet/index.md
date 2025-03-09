@@ -4,6 +4,7 @@ title = 'What is ResNet?'
 weight = 10
 tags = ["Deep Learning", "Computer Vision", "ResNet"]
 +++
+{{< katex >}}
 
 ### ResNet Block
 
